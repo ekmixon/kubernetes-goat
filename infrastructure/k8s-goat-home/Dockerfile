@@ -15,7 +15,7 @@ COPY home .
 RUN git clone https://github.com/madhuakula/toc-page-hugo-theme.git themes/toc-page \
     && /usr/bin/hugo
 
-FROM nginx:alpine
+FROM nginx:1-alpine
 LABEL MAINTAINER="Madhu Akula" INFO="Kubernetes Goat"
 
 COPY --from=build /build/public /usr/share/nginx/html
