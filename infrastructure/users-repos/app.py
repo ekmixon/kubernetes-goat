@@ -11,7 +11,10 @@ def get_repo_details(user_name):
     # This need to be added in environment variables
     API_KEY = os.environ['API_KEY']
     headers = {'secret-api-key': API_KEY}
-    r = requests.get("https://api.github.com/users/" + user_name + "/repos", headers=headers)
+    r = requests.get(
+        f"https://api.github.com/users/{user_name}/repos", headers=headers
+    )
+
     return print(json.dumps(r.json(), indent=2))
 
 def main():
