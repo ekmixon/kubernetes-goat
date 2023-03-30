@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.17.3
 LABEL MAINTAINER="Madhu Akula" INFO="Kubernetes Goat"
 
 COPY app.tar.gz /app.tar.gz
