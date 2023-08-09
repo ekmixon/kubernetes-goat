@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.18.3
 
 LABEL MAINTAINER "Madhu Akula" INFO="Kubernetes Goat"
 
