@@ -1,4 +1,4 @@
-FROM python:alpine
+FROM python:3.13.0rc1-alpine3.20
 LABEL MAINTAINER="Madhu Akula" INFO="Kubernetes Goat"
 
 ENV API_KEY="k8s-goat-cf658c56a501385205cc6d2dafee8fc1"
